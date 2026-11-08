@@ -1,0 +1,165 @@
+/* CONTENEDOR PRINCIPAL */
+
+main .contenedor-principal {
+    border: yellow;
+
+}
+
+.exhibicion-juego__contenido {
+    display: grid;
+    grid-template-columns: 13fr 7fr;
+    gap: 20px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* IMAGEN GRANDE IZQUIERDA */
+.exhibicion-juego__principal {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.exhibicion-juego__principal img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* COLUMNA DERECHA */
+.exhibicion-juego__galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    min-width: 0;
+}
+
+/* TÍTULO DEL JUEGO */
+.exhibicion-juego__titulo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* CUADRÍCULA DE MINIATURAS */
+.exhibicion-juego__miniaturas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.exhibicion-juego__miniaturas img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.exhibicion-juego__miniaturas img:hover {
+    transform: scale(1.04);
+    filter: brightness(1.15);
+}
+
+/* ZONA DE COMPRA */
+.exhibicion-juego__compra {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    align-items: center;
+    margin-top: auto;
+}
+
+/* PRECIO */
+.exhibicion-juego__precio {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* DESCUENTO */
+.exhibicion-juego__descuento {
+    background-color: #145c38;
+    color: #5cff9a;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* BOTÓN COMPRAR */
+.exhibicion-juego__boton {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 14px;
+    background-color: #00f0ff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.exhibicion-juego__boton:hover {
+    background-color: #145c38;
+    color: #5cff9a;
+
+}
+
+/* CONTROLES PARA CAMBIAR DE JUEGO */
+.exhibicion-juego__controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+/* FLECHAS */
+.control-juego {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.control-juego:hover {
+    color: #2589d5;
+}
+
+/* INDICADORES */
+.exhibicion-juego__indicadores {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.indicador {
+    width: 11px;
+    height: 11px;
+    border: none;
+    border-radius: 50%;
+    background-color: #526174;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.indicador:hover {
+    background-color: #8ca6c2;
+}
+
+.indicador--activo {
+    background-color: #2589d5;
+    transform: scale(1.25);
+}
