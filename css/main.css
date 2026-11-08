@@ -1,3 +1,10 @@
+/* colores 
+lineas: rgb(24, 23, 23);
+azul body #09132b 
+ footer #060a16
+azul fluorecente #00f0ff
+barra búsqueda #111726*/
+
 * {
     margin: 0;
     padding: 0;
@@ -266,13 +273,16 @@ main {
 
     display: flex;
     justify-content: flex-end;
+    text-align: center;
 
 }
 
 .carrito__boton {
-
+    width: 220px;
+    background-color: #1bc40c;
+    color: white;
+    text-align: center;
     display: flex;
-    align-items: center;
     gap: 8px;
     padding: 9px 15px;
     text-decoration: none;
@@ -286,18 +296,11 @@ main {
 }
 
 .carrito__boton:hover {
-    background-color: #145c38;
-    color: #5cff9a;
+    background-color: #1bc40c;
+    color: white;
     border: 1px solid rgb(24, 23, 23);
 
 }
-
-/* colores 
-lineas: rgb(24, 23, 23);
-azul body #09132b 
- footer #060a16
-azul fluorecente #00f0ff
-barra búsqueda #111726*/
 
 /*Footer*/
 
