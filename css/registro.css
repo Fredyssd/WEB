@@ -1,0 +1,174 @@
+/* BLOQUE PRINCIPAL */
+.registro {
+    background-color: #080f20;
+    color: #fff;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* CABECERA */
+.registro__cabecera {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.registro__titulo {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.registro__descripcion {
+    color: #aab5c8;
+    font-size: 14px;
+}
+
+/* CONTENEDOR DEL FORMULARIO */
+.registro__contenedor {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #101a2e;
+    border: 1px solid #263550;
+    border-radius: 12px;
+}
+
+/* FORMULARIO */
+.registro__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* CAMPOS */
+.registro__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.registro__label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #dce5f2;
+}
+
+.registro__input {
+    padding: 12px;
+    background-color: #080f20;
+    border: 1px solid #34445e;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 13px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.registro__input:focus {
+    border-color: #20d5e5;
+}
+
+.registro__input::placeholder {
+    color: #75839a;
+}
+
+/* TÉRMINOS */
+.registro__terminos {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 11px;
+    color: #aab5c8;
+    line-height: 1.5;
+}
+
+.registro__terminos input {
+    accent-color: #20d5e5;
+    margin-top: 2px;
+}
+
+/* BOTÓN */
+.registro__boton {
+    padding: 14px;
+    background: linear-gradient(100deg, #19c9df, #367af3);
+    border: none;
+    border-radius: 6px;
+    color: #07152a;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.registro__boton:hover {
+    filter: brightness(1.1);
+}
+
+/* ENLACE DE INICIO DE SESIÓN */
+.registro__enlace {
+    text-align: center;
+    font-size: 12px;
+    color: #aab5c8;
+}
+
+.registro__enlace a {
+    color: #20d5e5;
+    text-decoration: none;
+}
+
+.registro__enlace a:hover {
+    text-decoration: underline;
+}
+
+/* SECCIÓN DE UBICACIÓN */
+.registro__ubicacion {
+    max-width: 1000px;
+    margin: 55px auto 20px;
+    text-align: center;
+}
+
+.registro__ubicacion-titulo {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.registro__ubicacion-texto {
+    color: #aab5c8;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* MAPA */
+.registro__mapa {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #263550;
+    border-radius: 10px;
+}
+
+.registro__mapa iframe {
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+
+    .registro {
+        padding: 25px 12px;
+    }
+
+    .registro__titulo {
+        font-size: 24px;
+    }
+
+    .registro__contenedor {
+        padding: 20px;
+    }
+
+    .registro__mapa iframe {
+        height: 280px;
+    }
+
+}

@@ -1,0 +1,197 @@
+/* BLOQUE PRINCIPAL */
+.resena {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 25px;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* COLUMNA DE VÍDEOS */
+.resena__videos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* VÍDEO PRINCIPAL */
+.resena__video-principal {
+    width: 100%;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.resena__video-principal video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+}
+
+/* LISTA DE VÍDEOS PEQUEÑOS */
+.resena__videos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.resena__video-mini video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: #000;
+    border-radius: 8px;
+}
+
+.resena__video-titulo {
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* COLUMNA DE INFORMACIÓN */
+.resena__informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* IMAGEN DEL PRODUCTO */
+.resena__imagen {
+    text-align: center;
+}
+
+.resena__imagen img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* DESCRIPCIÓN, FICHA Y VALORACIÓN */
+.resena__descripcion,
+.resena__ficha,
+.resena__valoracion {
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+/* TÍTULOS */
+.resena__titulo,
+.resena__subtitulo {
+    margin-top: 0;
+}
+
+/* DATOS DE LA FICHA */
+.resena__dato {
+    margin: 10px 0;
+}
+
+/* ESTRELLAS */
+.resena__estrellas {
+    color: #f5a623;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+/* NOTA */
+.resena__nota {
+    font-weight: bold;
+}
+
+/*Reseña*/
+
+/* BLOQUE PRINCIPAL */
+.juego {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 25px;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* COLUMNA DE DESCRIPCIÓN */
+.juego__descripcion {
+    padding: 25px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+/* TÍTULOS */
+.juego__titulo {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* TEXTO DESCRIPTIVO */
+.juego__texto {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    text-align: justify;
+}
+
+/* COLUMNA DE REQUISITOS */
+.juego__requisitos {
+    padding: 25px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+/* CADA REQUISITO */
+.juego__requisito {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.juego__requisito:last-child {
+    border-bottom: none;
+}
+
+/* ETIQUETAS */
+.juego__etiqueta {
+    font-weight: bold;
+    font-size: 14px;
+    color: #222;
+}
+
+/* VALORES */
+.juego__valor {
+    font-size: 15px;
+    color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .juego {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* DISEÑO RESPONSIVE */
+@media (max-width: 768px) {
+    .resena {
+        grid-template-columns: 1fr;
+    }
+
+    .resena__videos-lista {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .resena__videos-lista {
+        grid-template-columns: 1fr;
+    }
+}

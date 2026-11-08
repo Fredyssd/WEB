@@ -75,47 +75,165 @@
 
     <!-- inicio main -->
     <main>
+        <div class="contenedor-busqueda">
+            <div class="herramientas-tienda">
+                <div>
+                    <span>CATÁLOGO COMPLETO</span>
+                </div>
+                <!-- ORDENAR POR -->
+                <div class="ordenar-tienda">
 
-        <div class="herramientas-tienda">
+                    <label for="orden-juegos">ORDENAR POR</label>
 
-            <!-- BARRA DE BÚSQUEDA -->
-            <div class="busqueda-tienda">
-                <input type="text" placeholder="Buscar juegos..." class="busqueda-tienda__input">
+                    <select id="orden-juegos" class="ordenar-tienda__select">
+                        <option value="relevante">Más relevante</option>
+                        <option value="menor-precio">Menor precio</option>
+                        <option value="mayor-precio">Mayor precio</option>
+                    </select>
 
-                <button class="busqueda-tienda__boton">
-                    BUSCAR
-                </button>
-            </div>
+                </div>
 
-            <!-- ORDENAR POR -->
-            <div class="ordenar-tienda">
+                <!-- TIPO DE VISUALIZACIÓN -->
+                <div class="visualizacion-tienda">
 
-                <label for="orden-juegos">Ordenar por:</label>
+                    <button class="visualizacion-tienda__boton visualizacion-activa" aria-label="Ver en cuadrícula"
+                        title="Ver en cuadrícula">
+                        <span>▦</span>
+                    </button>
 
-                <select id="orden-juegos" class="ordenar-tienda__select">
-                    <option value="relevante">Más relevante</option>
-                    <option value="menor-precio">Menor precio</option>
-                    <option value="mayor-precio">Mayor precio</option>
-                </select>
+                    <button class="visualizacion-tienda__boton" aria-label="Ver en filas" title="Ver en filas">
+                        <span>☰</span>
+                    </button>
 
-            </div>
-
-            <!-- TIPO DE VISUALIZACIÓN -->
-            <div class="visualizacion-tienda">
-
-                <button class="visualizacion-tienda__boton visualizacion-activa" aria-label="Ver en cuadrícula"
-                    title="Ver en cuadrícula">
-                    <span>▦</span>
-                </button>
-
-                <button class="visualizacion-tienda__boton" aria-label="Ver en filas" title="Ver en filas">
-                    <span>☰</span>
-                </button>
+                </div>
 
             </div>
-
         </div>
 
+        <!-- contenido catalogo -->
+        <div class="contenedor-principal">
+            <div class="catalogo">
+
+                <!-- MENÚ DE FILTROS -->
+                <div class="filtros">
+                    <h2>FILTRAR</h2>
+
+                    <h3>CATEGORÍAS</h3>
+                    <label><input type="checkbox"> AVENTURA</label>
+                    <label><input type="checkbox"> ESTRATEGIA</label>
+                    <label><input type="checkbox"> SIMULACIÓN</label>
+                    <label><input type="checkbox"> ACCIÓN</label>
+                    <label><input type="checkbox"> DEPORTES</label>
+                    <label><input type="checkbox"> TERROR/MISTERIO</label>
+
+
+                    <h3>PRECIO</h3>
+                    <label><input type="checkbox"> 0 € - 25 €</label>
+                    <label><input type="checkbox"> 25 € - 50 €</label>
+                    <label><input type="checkbox"> 50 € - 100 €</label>
+                    <label><input type="checkbox"> Más de 100 €</label>
+                    <h3>PLATAFORMA</h3>
+                    <label><input type="checkbox"> WINDOWS</label>
+                    <label><input type="checkbox"> macOS</label>
+                    <label><input type="checkbox"> STEAM DECK</label>
+                </div>
+
+                <!-- CUADRÍCULA DE PRODUCTOS -->
+                <div class="productos">
+
+                    <!-- PRODUCTO 1 -->
+                    <div class="producto">
+                        <img src="https://placehold.co/400x400" alt="Producto 1">
+                        <h3>Producto 1</h3>
+                        <div class="producto-info">
+                            <span>29,99 €</span>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 2 -->
+                    <div class="producto">
+                        <img src="https://placehold.co/400x400" alt="Producto 2">
+                        <h3>Producto 2</h3>
+                        <div class="producto-info">
+                            <span>39,99 €</span>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 3 -->
+                    <div class="producto">
+                        <img src="https://placehold.co/400x400" alt="Producto 3">
+                        <h3>Producto 3</h3>
+                        <div class="producto-info">
+                            <span>19,99 €</span>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 4 -->
+                    <div class="producto">
+                        <img src="https://placehold.co/400x400" alt="Producto 4">
+                        <h3>Producto 4</h3>
+                        <div class="producto-info">
+                            <span>49,99 €</span>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 5 -->
+                    <div class="producto">
+                        <img src="https://placehold.co/400x400" alt="Producto 5">
+                        <h3>Producto 5</h3>
+                        <div class="producto-info">
+                            <span>59,99 €</span>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 6 -->
+                    <div class="producto">
+                        <img src="https://placehold.co/400x400" alt="Producto 6">
+                        <h3>Producto 6</h3>
+                        <div class="producto-info">
+                            <span>24,99 €</span>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 7 -->
+                    <div class="producto">
+                        <img src="https://placehold.co/400x400" alt="Producto 7">
+                        <h3>Producto 7</h3>
+                        <div class="producto-info">
+                            <span>34,99 €</span>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 8 -->
+                    <div class="producto">
+                        <img src="https://placehold.co/400x400" alt="Producto 8">
+                        <h3>Producto 8</h3>
+                        <div class="producto-info">
+                            <span>44,99 €</span>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTO 9 -->
+                    <div class="producto">
+                        <img src="https://placehold.co/400x400" alt="Producto 9">
+                        <h3>Producto 9</h3>
+                        <div class="producto-info">
+                            <span>69,99 €</span>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </main>
 

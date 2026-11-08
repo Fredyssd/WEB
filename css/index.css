@@ -137,7 +137,6 @@
     border-radius: 50%;
     background-color: #526174;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .indicador:hover {
@@ -167,7 +166,6 @@
     border: 1px solid rgb(24, 23, 23);
     border-radius: 2px;
     min-width: 0;
-    transition: transform 0.3s ease;
 }
 
 .tarjeta-juego:hover {
@@ -268,13 +266,12 @@
 .tarjeta-juego__boton {
     width: 100%;
     padding: 12px;
-    background-color: #111726;
-    color: white;
+    background-color: #072332;
+    color: #00f0ff;
     border: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .tarjeta-juego__boton:hover {

@@ -1,0 +1,601 @@
+/* =====================================
+   BLOQUE PRINCIPAL
+===================================== */
+
+.carrito {
+    background-color: #080f20;
+    color: #f1f5fc;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   CABECERA
+===================================== */
+
+.carrito__cabecera {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1b2941;
+}
+
+.carrito__migas {
+    font-size: 12px;
+    color: #8997ad;
+}
+
+.carrito__miga-activa {
+    color: #20d5e5;
+    font-weight: bold;
+}
+
+.carrito__titulo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.carrito__titulo {
+    font-size: 28px;
+    margin: 0;
+}
+
+.carrito__contador {
+    background-color: #102b42;
+    border: 1px solid #075b75;
+    color: #20d5e5;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.carrito__seguridad {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    color: #00d9a0;
+    background-color: #092a2a;
+    border: 1px solid #075b55;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+
+/* =====================================
+   DISTRIBUCIÓN PRINCIPAL
+===================================== */
+
+.carrito__contenido {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+    align-items: start;
+}
+
+.carrito__productos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* =====================================
+   TARJETAS DE PRODUCTOS
+===================================== */
+
+.producto-carrito {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr) 90px;
+    gap: 15px;
+    align-items: center;
+    padding: 15px;
+    background-color: #101a2e;
+    border: 1px solid #1c2a43;
+    border-radius: 12px;
+}
+
+.producto-carrito__imagen-contenedor {
+    position: relative;
+    height: 95px;
+}
+
+.producto-carrito__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.producto-carrito__descuento {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #00ce83;
+    color: #05291c;
+    padding: 4px 7px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.producto-carrito__edicion {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: #07101e;
+    color: #20d5e5;
+    padding: 3px 5px;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.producto-carrito__informacion {
+    min-width: 0;
+}
+
+.producto-carrito__etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.producto-carrito__etiqueta {
+    background-color: #1c2b42;
+    color: #c5d2e4;
+    font-size: 10px;
+    padding: 4px 6px;
+    border-radius: 3px;
+}
+
+.producto-carrito__titulo {
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+.producto-carrito__descripcion {
+    color: #9aa8bc;
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0 0 15px;
+}
+
+.producto-carrito__opciones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.producto-carrito__destino-label {
+    color: #aab5c8;
+    font-size: 10px;
+}
+
+.producto-carrito__opcion {
+    background: transparent;
+    color: #b9c5d8;
+    border: 1px solid #293951;
+    padding: 5px 8px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.producto-carrito__opcion--activa {
+    background-color: #15c8df;
+    color: #061323;
+    border-color: #15c8df;
+    font-weight: bold;
+}
+
+.producto-carrito__deseos {
+    background: transparent;
+    border: none;
+    color: #aab5c8;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.producto-carrito__eliminar {
+    background: transparent;
+    border: none;
+    color: #ff6675;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.producto-carrito__precio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.producto-carrito__precio-anterior {
+    color: #75839a;
+    text-decoration: line-through;
+    font-size: 10px;
+}
+
+
+/* =====================================
+   AVISO DE ENTREGA
+===================================== */
+
+.carrito__aviso {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #0b192c;
+    border: 1px solid #07506a;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.carrito__aviso-icono {
+    background-color: #103b51;
+    color: #20d5e5;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.carrito__aviso-texto strong {
+    font-size: 12px;
+}
+
+.carrito__aviso-texto p {
+    color: #aab5c8;
+    font-size: 10px;
+    line-height: 1.5;
+    margin: 5px 0 0;
+}
+
+
+/* =====================================
+   ACCIONES DEL CARRITO
+===================================== */
+
+.carrito__acciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.carrito__volver {
+    text-decoration: none;
+    color: #e0e8f4;
+    border: 1px solid #34445e;
+    background-color: #111c30;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+.carrito__vaciar {
+    background: transparent;
+    border: none;
+    color: #8997ad;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+
+/* =====================================
+   RESUMEN DEL PEDIDO
+===================================== */
+
+.resumen {
+    background-color: #101a2e;
+    border: 1px solid #07506a;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.resumen__cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.resumen__titulo {
+    font-size: 15px;
+    margin: 0;
+}
+
+.resumen__moneda {
+    color: #b8c6d8;
+    border: 1px solid #35465f;
+    padding: 5px 8px;
+    font-size: 9px;
+    border-radius: 4px;
+}
+
+.resumen__linea {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 13px 0;
+    font-size: 11px;
+    color: #b6c1d0;
+}
+
+.resumen__linea strong {
+    color: #e8eef8;
+}
+
+.resumen__linea--descuento,
+.resumen__linea--descuento strong {
+    color: #00d99a;
+}
+
+.resumen__linea--impuestos {
+    color: #8997ad;
+    font-size: 10px;
+}
+
+.resumen__separador {
+    border: none;
+    border-top: 1px solid #26354c;
+    margin: 18px 0;
+}
+
+
+/* =====================================
+   TOTAL DEL PEDIDO
+===================================== */
+
+.resumen__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.resumen__total-label {
+    color: #9ba9bd;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.resumen__ahorro {
+    color: #00d9c2;
+    font-size: 9px;
+    margin: 5px 0 0;
+}
+
+.resumen__total-precio {
+    font-size: 25px;
+    color: #fff;
+}
+
+
+/* =====================================
+   BOTONES DE PAGO
+===================================== */
+
+.resumen__pagar {
+    width: 100%;
+    padding: 15px 8px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(100deg, #19c9df, #367af3);
+    color: #07152a;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.resumen__pagar:hover {
+    filter: brightness(1.1);
+}
+
+.resumen__regalo {
+    width: 100%;
+    padding: 11px 5px;
+    margin-top: 8px;
+    background: transparent;
+    border: 1px solid #30415c;
+    border-radius: 6px;
+    color: #d6dfec;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+/* =====================================
+   CUPÓN PROMOCIONAL
+===================================== */
+
+.resumen__cupon-label {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: #c5d2e4;
+}
+
+.resumen__cupon-formulario {
+    display: flex;
+    gap: 6px;
+}
+
+.resumen__cupon-input {
+    width: 100%;
+    min-width: 0;
+    background-color: #080f20;
+    border: 1px solid #34445e;
+    border-radius: 4px;
+    color: #fff;
+    padding: 8px;
+    font-size: 10px;
+}
+
+.resumen__cupon-boton {
+    background-color: #26354b;
+    border: 1px solid #3c4d65;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 10px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+/* =====================================
+   MÉTODOS DE PAGO
+===================================== */
+
+.resumen__metodos-titulo {
+    color: #8997ad;
+    font-size: 10px;
+    margin-bottom: 12px;
+}
+
+.resumen__metodos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.resumen__metodo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 12px 5px;
+    border: 1px solid #26354c;
+    border-radius: 5px;
+    color: #20d5e5;
+}
+
+.resumen__metodo p {
+    margin: 0;
+    font-size: 10px;
+    color: #d6dfec;
+}
+
+.resumen__metodos-nota {
+    text-align: center;
+    color: #8997ad;
+    font-size: 9px;
+    margin-top: 12px;
+}
+
+
+/* =====================================
+   GARANTÍA
+===================================== */
+
+.carrito__garantia {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background-color: #101a2e;
+    border: 1px solid #1c2a43;
+    border-radius: 12px;
+}
+
+.carrito__garantia-icono {
+    background-color: #0a3438;
+    color: #00d9a0;
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+.carrito__garantia strong {
+    font-size: 11px;
+}
+
+.carrito__garantia p {
+    color: #9ba9bd;
+    font-size: 10px;
+    line-height: 1.5;
+    margin: 5px 0 0;
+}
+
+
+/* =====================================
+   DISEÑO RESPONSIVE
+===================================== */
+
+@media (max-width: 1000px) {
+
+    .carrito__contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .carrito__garantia {
+        grid-column: 1;
+    }
+
+    .resumen {
+        max-width: none;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .carrito {
+        padding: 12px;
+    }
+
+    .carrito__titulo {
+        font-size: 21px;
+    }
+
+    .carrito__seguridad {
+        position: static;
+        width: fit-content;
+    }
+
+    .producto-carrito {
+        grid-template-columns: 100px minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .producto-carrito__imagen-contenedor {
+        height: 100px;
+        grid-row: span 2;
+    }
+
+    .producto-carrito__informacion {
+        grid-column: 2;
+    }
+
+    .producto-carrito__precio {
+        grid-column: 2;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .producto-carrito__deseos {
+        margin-left: 0;
+    }
+
+    .carrito__acciones {
+        flex-wrap: wrap;
+    }
+
+}

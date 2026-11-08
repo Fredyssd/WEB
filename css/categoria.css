@@ -1,55 +1,24 @@
 /* CONTENEDOR GENERAL */
+
+.contenedor-busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
 .herramientas-tienda {
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
     gap: 20px;
     width: 70%;
     padding: 15px;
     margin: 30px 0;
     background-color: #060a16;
-    border: 1px solid #1b2b45;
-    border-radius: 6px;
-}
-
-/* BÚSQUEDA */
-.busqueda-tienda {
-    display: flex;
-    flex: 1;
-    max-width: 450px;
-}
-
-.busqueda-tienda__input {
-    width: 100%;
-    padding: 11px 14px;
-    background-color: #111c32;
-    color: white;
-    border: 1px solid #26364e;
-    border-radius: 4px 0 0 4px;
-    outline: none;
-}
-
-.busqueda-tienda__input:focus {
-    border-color: #2589d5;
-}
-
-.busqueda-tienda__input::placeholder {
-    color: #8495aa;
-}
-
-.busqueda-tienda__boton {
-    padding: 10px 18px;
-    background-color: #1769aa;
-    color: white;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.busqueda-tienda__boton:hover {
-    background-color: #2589d5;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
 }
 
 /* ORDENAR */
@@ -57,18 +26,25 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #C7D5E0;
-    white-space: nowrap;
+    color: white;
 }
 
 .ordenar-tienda__select {
     padding: 10px;
-    background-color: #111c32;
+    background-color: #111726;
     color: white;
-    border: 1px solid #26364e;
-    border-radius: 4px;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
     cursor: pointer;
-    outline: none;
+}
+
+.ordenar-tienda__select option {
+    background-color: #111726;
+
+}
+
+.herramientas-tienda value {
+    background-color: #00f0ff;
 }
 
 /* VISUALIZACIÓN */
@@ -81,9 +57,9 @@
 .visualizacion-tienda__boton {
     width: 40px;
     height: 40px;
-    background-color: #111c32;
+    background-color: #111726;
     color: #C7D5E0;
-    border: 1px solid #26364e;
+    border: 1px solid rgb(24, 23, 23);
     border-radius: 4px;
     font-size: 23px;
     cursor: pointer;
@@ -91,12 +67,121 @@
 }
 
 .visualizacion-tienda__boton:hover {
-    background-color: #1769aa;
+    background-color: #00f0ff;
     color: white;
 }
 
 .visualizacion-activa {
-    background-color: #1769aa;
+    background-color: #00f0ff;
     color: white;
-    border-color: #2589d5;
+    border-color: rgb(24, 23, 23);
+}
+
+/*contendo categorias*/
+
+/* CONTENEDOR PRINCIPAL */
+.catalogo {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+/* MENÚ DE FILTROS */
+.filtros {
+    padding: 20px;
+    background-color: #060a16;
+    border-radius: 2px;
+    height: auto;
+}
+
+.filtros h2 {
+    margin-top: 0;
+}
+
+.filtros h3 {
+    margin-top: 25px;
+    color: #00f0ff;
+}
+
+.filtros label {
+    display: block;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+/* CUADRÍCULA DE PRODUCTOS */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* TARJETA DE CADA PRODUCTO */
+.producto {
+    background-color: #060a16;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.producto h3 {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+/* PRECIO Y BOTÓN */
+.producto-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.producto-info span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.producto-info button {
+    background-color: #072332;
+    color: #00f0ff;
+    border: 1px solid #00f0ff;
+    padding: 10px 14px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.producto-info button:hover {
+    background-color: #00f0ff;
+    color: black;
+}
+
+/* DISEÑO PARA MÓVILES */
+@media (max-width: 768px) {
+    .catalogo {
+        grid-template-columns: 1fr;
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .productos {
+        grid-template-columns: 1fr;
+    }
 }

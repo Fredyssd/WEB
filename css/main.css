@@ -3,7 +3,8 @@ lineas: rgb(24, 23, 23);
 azul body #09132b 
  footer #060a16
 azul fluorecente #00f0ff
-barra búsqueda #111726*/
+barra búsqueda #111726
+botones #072332*/
 
 * {
     margin: 0;
@@ -29,7 +30,7 @@ body {
 }
 
 main {
-    flex: 1 o auto;
+    flex: 1;
 }
 
 .contenedor-principal {

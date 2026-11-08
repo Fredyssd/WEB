@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/detalle.css">
 
     <title>Nexusstore</title>
 </head>
@@ -74,6 +75,172 @@
 
     <!-- inicio main -->
     <main>
+        <!-- espacio video -->
+
+        <div class="resena">
+
+            <!-- COLUMNA IZQUIERDA: VÍDEOS -->
+            <div class="resena__videos">
+
+                <!-- VÍDEO PRINCIPAL -->
+                <div class="resena__video-principal">
+                    <video controls poster="imagenes/portada-video.jpg">
+                        <source src="videos/video-principal.mp4" type="video/mp4">
+                        Tu navegador no admite vídeos.
+                    </video>
+                </div>
+
+                <!-- VÍDEOS PEQUEÑOS -->
+                <div class="resena__videos-lista">
+
+                    <div class="resena__video-mini">
+                        <video controls poster="imagenes/video1.jpg">
+                            <source src="videos/video1.mp4" type="video/mp4">
+                        </video>
+                        <p class="resena__video-titulo">Vídeo 1</p>
+                    </div>
+
+                    <div class="resena__video-mini">
+                        <video controls poster="imagenes/video2.jpg">
+                            <source src="videos/video2.mp4" type="video/mp4">
+                        </video>
+                        <p class="resena__video-titulo">Vídeo 2</p>
+                    </div>
+
+                    <div class="resena__video-mini">
+                        <video controls poster="imagenes/video3.jpg">
+                            <source src="videos/video3.mp4" type="video/mp4">
+                        </video>
+                        <p class="resena__video-titulo">Vídeo 3</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA: INFORMACIÓN -->
+            <div class="resena__informacion">
+
+                <!-- IMAGEN -->
+                <div class="resena__imagen">
+                    <img src="images/juegos/cats.jpg" alt="Imagen del producto">
+                </div>
+
+                <!-- DESCRIPCIÓN -->
+                <div class="resena__descripcion">
+                    <h2 class="resena__titulo">Nombre del producto</h2>
+
+                    <p class="resena__texto">
+                        Aquí puedes escribir una descripción del producto,
+                        explicar sus características principales y comentar
+                        tu experiencia después de probarlo.
+                    </p>
+                </div>
+
+                <!-- FICHA TÉCNICA -->
+                <div class="resena__ficha">
+                    <h3 class="resena__subtitulo">Ficha técnica</h3>
+
+                    <p class="resena__dato">
+                        <strong>Marca:</strong> Nombre de la marca
+                    </p>
+
+                    <p class="resena__dato">
+                        <strong>Modelo:</strong> Modelo del producto
+                    </p>
+
+                    <p class="resena__dato">
+                        <strong>Peso:</strong> 500 g
+                    </p>
+
+                    <p class="resena__dato">
+                        <strong>Material:</strong> Material del producto
+                    </p>
+
+                    <p class="resena__dato">
+                        <strong>Precio:</strong> 99,99 €
+                    </p>
+                </div>
+
+                <!-- VALORACIÓN -->
+                <div class="resena__valoracion">
+                    <h3 class="resena__subtitulo">Valoración</h3>
+
+                    <div class="resena__estrellas">
+                        ★★★★★
+                    </div>
+
+                    <p class="resena__nota">
+                        <strong>4,5 / 5</strong>
+                    </p>
+
+                    <p class="resena__texto">
+                        Un producto con muy buenas prestaciones
+                        y una excelente relación calidad-precio.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- reseña -->
+
+        <div class="juego">
+
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="juego__descripcion">
+
+                <h2 class="juego__titulo">Acerca de este juego</h2>
+
+                <p class="juego__texto">
+                    Aquí puedes escribir una descripción completa del videojuego.
+                    Explica de qué trata, cuál es su historia, su jugabilidad,
+                    sus personajes principales y qué lo hace especial.
+                    También puedes comentar sus modos de juego y características
+                    más destacadas.
+                </p>
+
+            </div>
+
+            <!-- COLUMNA DERECHA -->
+            <div class="juego__requisitos">
+
+                <h2 class="juego__titulo">Requisitos mínimos</h2>
+
+                <div class="juego__requisito">
+                    <span class="juego__etiqueta">Sistema operativo:</span>
+                    <span class="juego__valor">Windows 10 (64 bits)</span>
+                </div>
+
+                <div class="juego__requisito">
+                    <span class="juego__etiqueta">Procesador:</span>
+                    <span class="juego__valor">Intel Core i5</span>
+                </div>
+
+                <div class="juego__requisito">
+                    <span class="juego__etiqueta">Memoria RAM:</span>
+                    <span class="juego__valor">8 GB</span>
+                </div>
+
+                <div class="juego__requisito">
+                    <span class="juego__etiqueta">Tarjeta gráfica:</span>
+                    <span class="juego__valor">NVIDIA GTX 1050</span>
+                </div>
+
+                <div class="juego__requisito">
+                    <span class="juego__etiqueta">DirectX:</span>
+                    <span class="juego__valor">Versión 11</span>
+                </div>
+
+                <div class="juego__requisito">
+                    <span class="juego__etiqueta">Almacenamiento:</span>
+                    <span class="juego__valor">50 GB disponibles</span>
+                </div>
+
+            </div>
+
+        </div>
 
     </main>
 

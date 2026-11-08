@@ -1,0 +1,346 @@
+/* BLOQUE PRINCIPAL */
+.oferta {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* TARJETA */
+.oferta__tarjeta {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.oferta__tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGEN */
+.oferta__imagen {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* INFORMACIÓN */
+.oferta__informacion {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 18px;
+}
+
+/* CATEGORÍA */
+.oferta__categoria {
+    font-size: 12px;
+    color: #777;
+    margin: 0 0 10px;
+}
+
+/* TÍTULO */
+.oferta__titulo {
+    font-size: 20px;
+    margin: 0 0 12px;
+}
+
+/* DESCRIPCIÓN */
+.oferta__descripcion {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* PRECIO */
+.oferta__precio {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    padding: 15px 0;
+}
+
+/* DESCUENTO */
+.oferta__descuento {
+    background-color: #e63946;
+    color: white;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+/* VALOR */
+.oferta__valor {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* BOTÓN */
+.oferta__boton {
+    width: 100%;
+    padding: 12px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.oferta__boton:hover {
+    background-color: #444;
+}
+
+/*columna */
+
+/* COLORES Y BLOQUE DE OFERTAS */
+.oferta {
+    background-color: #0b142b;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 1500px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+
+/* LISTA DE JUEGOS */
+.oferta__lista {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FILA DE CADA JUEGO */
+.oferta__juego {
+    display: grid;
+    grid-template-columns: 75px minmax(180px, 1fr) 45px 100px 75px 120px;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 8px;
+    border-bottom: 1px solid #263550;
+    min-width: 0;
+}
+
+.oferta__juego:hover {
+    background-color: #15213b;
+}
+
+/* IMAGEN */
+.oferta__imagen {
+    width: 75px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* INFORMACIÓN */
+.oferta__informacion {
+    min-width: 0;
+}
+
+.oferta__titulo {
+    font-size: 13px;
+    margin: 0 0 6px;
+    color: #fff;
+}
+
+.oferta__detalles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 12px;
+    font-size: 10px;
+    color: #aab5ca;
+}
+
+.oferta__valoracion {
+    color: #ffc928;
+    font-weight: bold;
+}
+
+/* DESCUENTO */
+.oferta__descuento {
+    background-color: #00c879;
+    color: #052719;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+/* PRECIO */
+.oferta__precio {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+
+/* BOTONES */
+.oferta__boton {
+    padding: 9px 8px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.oferta__boton--ficha {
+    background-color: #17233e;
+    border: 1px solid #344461;
+    color: #fff;
+}
+
+.oferta__boton--ficha:hover {
+    background-color: #263958;
+}
+
+.oferta__boton--carrito {
+    background-color: #00c879;
+    border: 1px solid #00c879;
+    color: #062719;
+}
+
+.oferta__boton--carrito:hover {
+    background-color: #00e58a;
+}
+
+/* CATEGORÍAS POPULARES */
+.oferta-categorias {
+    max-width: 1500px;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #0b142b;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.oferta-categorias__titulo {
+    font-size: 17px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #263550;
+}
+
+/* GRID DE CATEGORÍAS */
+.oferta-categorias__lista {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* TARJETAS */
+.oferta-categorias__tarjeta {
+    background-color: #14213b;
+    border: 1px solid #263550;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.oferta-categorias__tarjeta:hover {
+    transform: translateY(-4px);
+}
+
+/* IMÁGENES DE CATEGORÍAS */
+.oferta-categorias__tarjeta img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+}
+
+/* NOMBRE DE CATEGORÍA */
+.oferta-categorias__nombre {
+    font-size: 10px;
+    margin: 10px 0 5px;
+    color: #fff;
+}
+
+/* CANTIDAD DE JUEGOS */
+.oferta-categorias__cantidad {
+    font-size: 9px;
+    color: #aab5ca;
+    margin: 0;
+}
+
+/* TABLETS */
+@media (max-width: 1000px) {
+    .oferta__juego {
+        grid-template-columns: 65px minmax(150px, 1fr) 42px 90px 65px 105px;
+        gap: 7px;
+    }
+
+    .oferta-categorias__lista {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* MÓVILES */
+@media (max-width: 650px) {
+    .oferta__juego {
+        grid-template-columns: 65px minmax(0, 1fr) 45px;
+        gap: 8px;
+    }
+
+    .oferta__imagen {
+        grid-row: span 2;
+    }
+
+    .oferta__informacion {
+        grid-column: 2 / 4;
+    }
+
+    .oferta__descuento {
+        grid-column: 2;
+    }
+
+    .oferta__precio {
+        grid-column: 3;
+        font-size: 10px;
+    }
+
+    .oferta__boton {
+        grid-column: span 1;
+    }
+
+    .oferta__boton--ficha {
+        grid-column: 2;
+    }
+
+    .oferta__boton--carrito {
+        grid-column: 3;
+    }
+
+    .oferta-categorias__lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+/* TABLETS */
+@media (max-width: 1000px) {
+    .oferta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MÓVILES */
+@media (max-width: 550px) {
+    .oferta {
+        grid-template-columns: 1fr;
+    }
+}
