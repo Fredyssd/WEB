@@ -1,17 +1,17 @@
 /* BLOQUE PRINCIPAL */
 .contenedor-detalle {
     width: 70%;
-    display: flex;
     max-width: 1400px;
+    margin: 10px auto;
+    box-sizing: border-box;
 }
 
 .resena {
     display: grid;
-    grid-template-columns: minmax(0, 2.23fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 70fr) minmax(0, 30fr);
     gap: 25px;
     max-width: 1400px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 10px auto;
 }
 
 .resena,
@@ -25,7 +25,10 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    gap: 15px;
+    background-color: #060a16;
+    border: 1px solid rgb(24, 23, 23);
+    padding: 10px;
+    gap: 10px;
 }
 
 /* VÍDEO PRINCIPAL */
@@ -60,14 +63,13 @@
 
 .resena__video-titulo {
     text-align: center;
-    margin: 5px 0;
 }
 
 /* COLUMNA DE INFORMACIÓN */
 .resena__informacion {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 /* IMAGEN DEL PRODUCTO */
@@ -87,7 +89,7 @@
 .resena__descripcion,
 .resena__ficha,
 .resena__valoracion {
-    padding: 18px;
+    padding: 10px;
     border: 1px solid rgb(24, 23, 23);
     border-radius: 2px;
     background-color: #060a16;
@@ -107,7 +109,7 @@
 /* ESTRELLAS */
 .resena__estrellas {
     color: #00f0ff;
-    font-size: 28px;
+    font-size: 20px;
     letter-spacing: 3px;
 }
 
@@ -121,17 +123,16 @@
 /* BLOQUE PRINCIPAL */
 .juego {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 70fr) minmax(0, 30fr);
     gap: 25px;
     max-width: 1400px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 20px auto;
     box-sizing: border-box;
 }
 
 /* COLUMNA DE DESCRIPCIÓN */
 .juego__descripcion {
-    padding: 25px;
+    padding: 15px;
     color: #00f0ff;
     background-color: #060a16;
     border: 1px solid rgb(24, 23, 23);
@@ -140,7 +141,7 @@
 
 /* TÍTULOS */
 .juego__titulo {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 0;
     margin-bottom: 20px;
 }
