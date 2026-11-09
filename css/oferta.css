@@ -1,3 +1,11 @@
+.contenedor-oferta {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 /* BLOQUE PRINCIPAL */
 .oferta {
     display: grid;
