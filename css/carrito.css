@@ -5,12 +5,32 @@
 .carrito {
     background-color: #080f20;
     color: #f1f5fc;
+    width: 70%;
+    max-width: 1400px;
     min-height: 100vh;
+    margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
 
+/* Centrar el título */
+.carrito__titulo {
+    font-size: 28px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Mantener el contenido dentro del ancho */
+.carrito__contenido {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+    align-items: start;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 /* =====================================
    CABECERA
