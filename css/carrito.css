@@ -325,18 +325,6 @@
    MÉTODOS DE PAGO
 ===================================== */
 
-.resumen__metodos-titulo {
-    color: #8997ad;
-    font-size: 10px;
-    margin-bottom: 12px;
-}
-
-.resumen__metodos-lista {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-}
-
 .resumen__metodo {
     display: flex;
     flex-direction: column;
@@ -344,9 +332,37 @@
     justify-content: center;
     gap: 5px;
     padding: 12px 5px;
-    border: 1px solid #26354c;
-    border-radius: 5px;
+    border: 1px solid #20d5e5;
+    border-radius: 8px;
+    background-color: #0c2035;
     color: #20d5e5;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.2s ease;
+    flex: 1;
+}
+
+.resumen__metodos-lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.resumen__metodo:hover {
+    background-color: #12334d;
+    border-color: #4be5f0;
+    transform: translateY(-2px);
+}
+
+.resumen__metodo span {
+    font-size: 20px;
+}
+
+.resumen__metodo p {
+    margin: 0;
 }
 
 /*----------------------*/
