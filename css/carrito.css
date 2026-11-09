@@ -126,35 +126,11 @@
     font-weight: bold;
 }
 
-.producto-carrito__edicion {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-    background-color: #07101e;
-    color: #20d5e5;
-    padding: 3px 5px;
-    font-size: 9px;
-    font-weight: bold;
-}
 
 .producto-carrito__informacion {
     min-width: 0;
 }
 
-.producto-carrito__etiquetas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 8px;
-}
-
-.producto-carrito__etiqueta {
-    background-color: #1c2b42;
-    color: #c5d2e4;
-    font-size: 10px;
-    padding: 4px 6px;
-    border-radius: 3px;
-}
 
 .producto-carrito__titulo {
     font-size: 16px;
@@ -175,44 +151,6 @@
     gap: 5px;
 }
 
-.producto-carrito__destino-label {
-    color: #aab5c8;
-    font-size: 10px;
-}
-
-.producto-carrito__opcion {
-    background: transparent;
-    color: #b9c5d8;
-    border: 1px solid #293951;
-    padding: 5px 8px;
-    font-size: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.producto-carrito__opcion--activa {
-    background-color: #15c8df;
-    color: #061323;
-    border-color: #15c8df;
-    font-weight: bold;
-}
-
-.producto-carrito__deseos {
-    background: transparent;
-    border: none;
-    color: #aab5c8;
-    font-size: 10px;
-    cursor: pointer;
-    margin-left: auto;
-}
-
-.producto-carrito__eliminar {
-    background: transparent;
-    border: none;
-    color: #ff6675;
-    font-size: 10px;
-    cursor: pointer;
-}
 
 .producto-carrito__precio {
     display: flex;
@@ -223,45 +161,7 @@
     white-space: nowrap;
 }
 
-.producto-carrito__precio-anterior {
-    color: #75839a;
-    text-decoration: line-through;
-    font-size: 10px;
-}
 
-
-/* =====================================
-   AVISO DE ENTREGA
-===================================== */
-
-.carrito__aviso {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background-color: #0b192c;
-    border: 1px solid #07506a;
-    border-radius: 10px;
-    padding: 12px;
-}
-
-.carrito__aviso-icono {
-    background-color: #103b51;
-    color: #20d5e5;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 20px;
-}
-
-.carrito__aviso-texto strong {
-    font-size: 12px;
-}
-
-.carrito__aviso-texto p {
-    color: #aab5c8;
-    font-size: 10px;
-    line-height: 1.5;
-    margin: 5px 0 0;
-}
 
 
 /* =====================================
@@ -344,11 +244,6 @@
     color: #00d99a;
 }
 
-.resumen__linea--impuestos {
-    color: #8997ad;
-    font-size: 10px;
-}
-
 .resumen__separador {
     border: none;
     border-top: 1px solid #26354c;
@@ -371,12 +266,6 @@
     color: #9ba9bd;
     font-size: 10px;
     font-weight: bold;
-}
-
-.resumen__ahorro {
-    color: #00d9c2;
-    font-size: 9px;
-    margin: 5px 0 0;
 }
 
 .resumen__total-precio {
@@ -406,55 +295,6 @@
     filter: brightness(1.1);
 }
 
-.resumen__regalo {
-    width: 100%;
-    padding: 11px 5px;
-    margin-top: 8px;
-    background: transparent;
-    border: 1px solid #30415c;
-    border-radius: 6px;
-    color: #d6dfec;
-    font-size: 10px;
-    cursor: pointer;
-}
-
-
-/* =====================================
-   CUPÓN PROMOCIONAL
-===================================== */
-
-.resumen__cupon-label {
-    display: block;
-    font-size: 11px;
-    margin-bottom: 10px;
-    color: #c5d2e4;
-}
-
-.resumen__cupon-formulario {
-    display: flex;
-    gap: 6px;
-}
-
-.resumen__cupon-input {
-    width: 100%;
-    min-width: 0;
-    background-color: #080f20;
-    border: 1px solid #34445e;
-    border-radius: 4px;
-    color: #fff;
-    padding: 8px;
-    font-size: 10px;
-}
-
-.resumen__cupon-boton {
-    background-color: #26354b;
-    border: 1px solid #3c4d65;
-    color: white;
-    border-radius: 4px;
-    padding: 7px 10px;
-    font-size: 10px;
-    cursor: pointer;
-}
 
 
 /* =====================================
@@ -485,53 +325,7 @@
     color: #20d5e5;
 }
 
-.resumen__metodo p {
-    margin: 0;
-    font-size: 10px;
-    color: #d6dfec;
-}
 
-.resumen__metodos-nota {
-    text-align: center;
-    color: #8997ad;
-    font-size: 9px;
-    margin-top: 12px;
-}
-
-
-/* =====================================
-   GARANTÍA
-===================================== */
-
-.carrito__garantia {
-    grid-column: 2;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 15px;
-    background-color: #101a2e;
-    border: 1px solid #1c2a43;
-    border-radius: 12px;
-}
-
-.carrito__garantia-icono {
-    background-color: #0a3438;
-    color: #00d9a0;
-    padding: 12px;
-    border-radius: 7px;
-    font-size: 20px;
-}
-
-.carrito__garantia strong {
-    font-size: 11px;
-}
-
-.carrito__garantia p {
-    color: #9ba9bd;
-    font-size: 10px;
-    line-height: 1.5;
-    margin: 5px 0 0;
-}
 
 
 /* =====================================
