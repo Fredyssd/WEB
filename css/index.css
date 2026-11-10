@@ -3,13 +3,15 @@
 
     background-color: #060a16;
     border: 1px solid rgb(24, 23, 23);
-    padding: 10px 10px 10px 10px;
+    padding: 20px;
+    margin-top: 30px;
 
 }
 
 .titulo-inicio {
-    margin-top: 50px;
-    font-size: 10;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
     color: white;
     text-align: center;
 }
