@@ -1,10 +1,8 @@
 /* BLOQUE PRINCIPAL */
 .registro {
-    background-color: #080f20;
-    color: #fff;
-    min-height: 100vh;
+    background-color: #09132b;
+    color: white;
     padding: 40px 20px;
-    font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
 
@@ -19,19 +17,14 @@
     margin-bottom: 10px;
 }
 
-.registro__descripcion {
-    color: #aab5c8;
-    font-size: 14px;
-}
-
 /* CONTENEDOR DEL FORMULARIO */
 .registro__contenedor {
     max-width: 500px;
     margin: 0 auto;
     padding: 30px;
-    background-color: #101a2e;
-    border: 1px solid #263550;
-    border-radius: 12px;
+    background-color: #060a16;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
 }
 
 /* FORMULARIO */
@@ -51,64 +44,41 @@
 .registro__label {
     font-size: 13px;
     font-weight: bold;
-    color: #dce5f2;
+    color: white;
 }
 
 .registro__input {
     padding: 12px;
-    background-color: #080f20;
-    border: 1px solid #34445e;
-    border-radius: 6px;
-    color: #fff;
+    background-color: #111726;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+    color: white;
     font-size: 13px;
-    outline: none;
     box-sizing: border-box;
-}
-
-.registro__input:focus {
-    border-color: #20d5e5;
-}
-
-.registro__input::placeholder {
-    color: #75839a;
-}
-
-/* TÉRMINOS */
-.registro__terminos {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    font-size: 11px;
-    color: #aab5c8;
-    line-height: 1.5;
-}
-
-.registro__terminos input {
-    accent-color: #20d5e5;
-    margin-top: 2px;
 }
 
 /* BOTÓN */
 .registro__boton {
     padding: 14px;
-    background: linear-gradient(100deg, #19c9df, #367af3);
+    background-color: #072332;
+    color: #00f0ff;
     border: none;
-    border-radius: 6px;
-    color: #07152a;
+    border-radius: 2px;
     font-weight: bold;
     font-size: 13px;
     cursor: pointer;
 }
 
 .registro__boton:hover {
-    filter: brightness(1.1);
+    background-color: #00f0ff;
+    color: black;
 }
 
 /* ENLACE DE INICIO DE SESIÓN */
 .registro__enlace {
     text-align: center;
     font-size: 12px;
-    color: #aab5c8;
+    color: #00f0ff;
 }
 
 .registro__enlace a {
@@ -117,12 +87,15 @@
 }
 
 .registro__enlace a:hover {
-    text-decoration: underline;
+    background-color: #00f0ff;
+    color: black;
 }
 
 /* SECCIÓN DE UBICACIÓN */
 .registro__ubicacion {
     max-width: 1000px;
+    width: 500px;
+    height: 500px;
     margin: 55px auto 20px;
     text-align: center;
 }
@@ -130,20 +103,17 @@
 .registro__ubicacion-titulo {
     font-size: 23px;
     margin-bottom: 10px;
+    color: #00f0ff;
+
 }
 
-.registro__ubicacion-texto {
-    color: #aab5c8;
-    font-size: 13px;
-    margin-bottom: 20px;
-}
 
 /* MAPA */
 .registro__mapa {
     width: 100%;
     overflow: hidden;
-    border: 1px solid #263550;
-    border-radius: 10px;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
 }
 
 .registro__mapa iframe {

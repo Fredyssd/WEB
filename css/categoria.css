@@ -158,7 +158,7 @@
 .producto-info button {
     background-color: #072332;
     color: #00f0ff;
-    border: 1px solid #00f0ff;
+    border: none;
     padding: 10px 14px;
     border-radius: 2px;
     cursor: pointer;
